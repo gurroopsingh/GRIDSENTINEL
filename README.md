@@ -15,14 +15,9 @@ Modern power grids are blind and reactive. They wait for catastrophic failures t
 
 This is not a traditional monitoring dashboard. This is a cognitive defense system equipped with a multi-agent AI brain, real-time digital twin physics simulation, and autonomous decision-making.
 
-> **💡 UI Screenshots:**
+> **💡 Mission Control Dashboard:**
 <p align="center">
-  <img src="assets/ui_screenshot_1.png" width="49%"/>
-  <img src="assets/ui_screenshot_2.png" width="49%"/>
-  <img src="assets/ui_screenshot_3.png" width="49%"/>
-  <img src="assets/ui_screenshot_4.png" width="49%"/>
-  <img src="assets/ui_screenshot_5.png" width="49%"/>
-  <img src="assets/ui_screenshot_6.png" width="49%"/>
+  <img src="assets/ui_screenshot_1.png" width="800" alt="GRIDSENTINEL Mission Control" />
 </p>
 
 ---
@@ -31,6 +26,8 @@ This is not a traditional monitoring dashboard. This is a cognitive defense syst
 
 ### 1. 🗣️ The Multi-Agent Debate Chamber
 At the core of the system is a LangGraph-orchestrated swarm of 12 specialized AI agents powered by Gemini 1.5 Pro. Instead of a single AI making blind guesses, these agents **debate** mitigation strategies in real-time, challenging each other's confidence scores before acting.
+<p align="center"><img src="assets/ui_screenshot_2.png" width="700" alt="Agent Debate Chamber" /></p>
+
 * **🎖️ Mission Commander:** Orchestrates all agents and authorizes final actions.
 * **🏥 Grid Health:** Monitors voltage fluctuations and transformer temperatures.
 * **🔮 Failure Prediction:** XGBoost-powered failure probability estimation.
@@ -45,12 +42,16 @@ At the core of the system is a LangGraph-orchestrated swarm of 12 specialized AI
 
 ### 2. 🌐 4-City National Digital Twin
 We built a highly realistic simulated national grid mapping **Mumbai, Delhi, Bengaluru, and Chennai**.
+<p align="center"><img src="assets/ui_screenshot_3.png" width="700" alt="Digital Twin" /></p>
+
 * **Physics Engine:** Runs live AC/DC power flow calculations using Pandapower.
 * **Scale:** Simulates 42 buses, 33 transmission lines, 13 substations, and 12 major generators (Thermal, Nuclear, Solar, Wind).
 * **Visuals:** Rendered in a fully interactive 3D environment using Three.js.
 
 ### 3. 🦢 Black Swan Disaster Simulator
 Judges can inject extreme, low-probability disaster events to watch the AI autonomously defend the grid. Built-in scenarios include:
+<p align="center"><img src="assets/ui_screenshot_4.png" width="700" alt="Black Swan Simulator" /></p>
+
 * Extreme Heat Wave — Mumbai
 * Category 4 Cyclone — Chennai
 * Nationwide Solar Collapse
@@ -59,6 +60,8 @@ Judges can inject extreme, low-probability disaster events to watch the AI auton
 
 ### 4. 🔧 Autonomous Self-Healing
 When a failure occurs (N-1 contingency), the system doesn't just alert a human. It autonomously executes operations to prevent a cascading collapse:
+<p align="center"><img src="assets/ui_screenshot_5.png" width="700" alt="Self-Healing UI" /></p>
+
 * Generator Redispatching
 * Transmission Line Switching
 * Dynamic Load Shedding (saving critical infrastructure like hospitals first)
@@ -68,6 +71,7 @@ An AI infrastructure planning tool. Prompt the AI with commands like *"Redesign 
 
 ### 6. 💰 Economic Impact Center
 Every blackout carries a financial cost. The platform actively calculates the economic damage of a potential failure versus the cost of the AI's preventative measures, demonstrating exactly how many ₹ Crores were saved.
+<p align="center"><img src="assets/ui_screenshot_6.png" width="700" alt="Economic Impact Center" /></p>
 
 ---
 
