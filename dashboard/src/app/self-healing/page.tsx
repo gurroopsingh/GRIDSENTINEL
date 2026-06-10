@@ -32,7 +32,7 @@ export default function SelfHealingPage() {
                 <motion.div key={sim.id || i} initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                             onClick={() => setSelected(sim)}
                             className={`p-3 rounded-xl cursor-pointer transition-all ${selected?.id === sim.id ? 'ring-1' : ''}`}
-                            style={{ background: 'rgba(255,255,255,0.03)', ringColor: 'rgba(0,255,136,0.3)' }}>
+                            style={{ background: 'rgba(255,255,255,0.03)', '--tw-ring-color': 'rgba(0,255,136,0.3)' } as any}>
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-xs font-semibold" style={{ color: '#e2e8f0' }}>{sim.scenario}</span>
                     <span className={`agent-badge severity-${sim.severity}`}>{sim.severity}</span>
