@@ -53,6 +53,7 @@ function PowerLine({ start, end, status }: { start: [number, number, number]; en
   const geometry = new THREE.BufferGeometry().setFromPoints(points);
 
   return (
+    // @ts-ignore
     <line ref={ref as any} geometry={geometry}>
       <lineBasicMaterial color={color} transparent opacity={status === 'critical' ? 0.9 : 0.3} linewidth={1} />
     </line>
