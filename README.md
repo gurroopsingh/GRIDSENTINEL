@@ -13,7 +13,7 @@
 
 Modern power grids are blind and reactive. They wait for catastrophic failures to happen, then respond. **GRIDSENTINEL** is an **AI-native autonomous infrastructure platform** that predicts, simulates, prevents, and self-heals power grid failures before they occur. 
 
-Built for the **FAR AWAY 2026 Finals**, this is not a monitoring dashboard. This is a cognitive defense system equipped with a multi-agent AI brain, real-time digital twin physics simulation, and autonomous decision-making.
+This is not a traditional monitoring dashboard. This is a cognitive defense system equipped with a multi-agent AI brain, real-time digital twin physics simulation, and autonomous decision-making.
 
 ---
 
@@ -106,4 +106,4 @@ Finally, open your browser and navigate to: **[http://localhost:3000](http://loc
 ---
 
 ## 📄 License
-MIT License. Built for presentation purposes at the FAR AWAY 2026 Finals.
+MIT License.
