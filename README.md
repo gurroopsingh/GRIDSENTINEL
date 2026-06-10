@@ -16,10 +16,14 @@ Modern power grids are blind and reactive. They wait for catastrophic failures t
 This is not a traditional monitoring dashboard. This is a cognitive defense system equipped with a multi-agent AI brain, real-time digital twin physics simulation, and autonomous decision-making.
 
 > **💡 UI Screenshots:**
-> *(Create an `assets` folder, take some screenshots using Win+Shift+S, drop them in, and replace these paths!)*
-> 
-> <img src="assets/dashboard.png" alt="GRIDSENTINEL Dashboard" width="800"/>
-> <img src="assets/digital-twin.png" alt="3D Digital Twin" width="800"/>
+<p align="center">
+  <img src="assets/ui_screenshot_1.png" width="49%"/>
+  <img src="assets/ui_screenshot_2.png" width="49%"/>
+  <img src="assets/ui_screenshot_3.png" width="49%"/>
+  <img src="assets/ui_screenshot_4.png" width="49%"/>
+  <img src="assets/ui_screenshot_5.png" width="49%"/>
+  <img src="assets/ui_screenshot_6.png" width="49%"/>
+</p>
 
 ---
 
