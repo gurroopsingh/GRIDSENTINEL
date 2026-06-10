@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "GRIDSENTINEL-X Ω — Autonomous Energy Defense Platform",
+  title: "GRIDSENTINEL — Autonomous Energy Defense Platform",
   description: "The World's First Autonomous Multi-Agent Energy Defense and Infrastructure Planning System",
 };
 
@@ -65,7 +65,7 @@ function TopBar() {
             style={{ background: 'rgba(10,14,39,0.9)', borderBottom: '1px solid rgba(0,212,255,0.08)' }}>
       <div className="flex items-center gap-3">
         <h1 className="text-lg font-bold tracking-wide" style={{ color: '#00d4ff' }}>
-          GRIDSENTINEL-X <span className="text-xs font-normal" style={{ color: '#8b5cf6' }}>Ω</span>
+          GRIDSENTINEL 
         </h1>
         <span className="text-xs px-2 py-0.5 rounded-full" style={{ background: 'rgba(0,255,136,0.1)', color: '#00ff88', border: '1px solid rgba(0,255,136,0.2)' }}>
           AUTONOMOUS

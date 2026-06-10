@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — ML Models for Grid Intelligence"""
+"""GRIDSENTINEL — ML Models for Grid Intelligence"""
 
 import numpy as np
 import pandas as pd

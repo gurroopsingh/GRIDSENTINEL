@@ -1,19 +1,29 @@
-# ⚡ GRIDSENTINEL-X Ω
+# ⚡ GRIDSENTINEL
 
 ### The World's First Autonomous Multi-Agent Energy Defense and Infrastructure Planning System
 
-![Status](https://img.shields.io/badge/Status-Active-00ff88?style=flat-square)
-![Agents](https://img.shields.io/badge/Agents-12%20Online-00d4ff?style=flat-square)
-![Cities](https://img.shields.io/badge/Coverage-4%20Cities-8b5cf6?style=flat-square)
-![AI](https://img.shields.io/badge/AI-Gemini%20Powered-ff3366?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Production_Ready-00ff88?style=flat-square)
+![Agents](https://img.shields.io/badge/Agents-12_Active-00d4ff?style=flat-square)
+![Cities](https://img.shields.io/badge/Coverage-4_Cities-8b5cf6?style=flat-square)
+![AI](https://img.shields.io/badge/AI-Gemini_Powered-ff3366?style=flat-square)
 
 ---
 
-## 🎯 What is GRIDSENTINEL-X Ω?
+## 🎯 What is GRIDSENTINEL?
 
-An **AI-native autonomous infrastructure platform** that predicts, simulates, prevents, and self-heals power grid failures before they occur. Built with multi-agent AI, real-time digital twin simulation, and autonomous decision-making.
+Modern power grids are blind and reactive. They wait for catastrophic failures to happen, then respond. **GRIDSENTINEL** is an **AI-native autonomous infrastructure platform** that predicts, simulates, prevents, and self-heals power grid failures before they occur. 
 
-**Not a monitoring dashboard. An autonomous defense system.**
+Built for the **FAR AWAY 2026 Finals**, this is not a monitoring dashboard. This is a cognitive defense system equipped with a multi-agent AI brain, real-time digital twin simulation, and autonomous decision-making.
+
+---
+
+## 🚀 Key Innovations
+
+1. **⚡ National Command Center:** Real-time grid overview with beautiful NASA-style dark mode UI.
+2. **🗣️ Agent Debate Chamber:** Watch 12 specialized LangGraph AI agents (Commander, Economist, Energy Scientist) analyze telemetry and argue over the best mitigation strategies in real-time.
+3. **🌐 3D Digital Twin:** Interactive physics simulation (Pandapower + Three.js) spanning Mumbai, Delhi, Bengaluru, and Chennai.
+4. **🦢 Black Swan Simulator:** Inject extreme disaster events (Category 5 Cyclones, Cyber Attacks, Solar Collapses) and watch the AI autonomously self-heal the grid.
+5. **🔮 Future Grid Designer:** AI infrastructure planning tool that generates multi-crore grid upgrades for 2035.
 
 ---
 
@@ -21,76 +31,49 @@ An **AI-native autonomous infrastructure platform** that predicts, simulates, pr
 
 | Layer | Technology | Purpose |
 |-------|------------|---------|
-| **Frontend** | Next.js, Three.js, Tailwind, Framer Motion | NASA-style Mission Control UI |
-| **Backend** | FastAPI, WebSocket, Redis | Real-time API & streaming |
-| **AI Brain** | LangGraph, Gemini API | 12 autonomous agents |
-| **Simulation** | Pandapower, NetworkX | 4-city digital twin |
-| **Database** | PostgreSQL | Persistent storage |
+| **Frontend** | Next.js, Three.js, Tailwind, Framer Motion | High-performance, animated Mission Control UI |
+| **Backend** | FastAPI, WebSockets | Low-latency real-time API & telemetry streaming |
+| **AI Brain** | LangGraph, Gemini 1.5 Pro | 12 autonomous debating agents |
+| **Simulation** | Pandapower | AC/DC physics power flow & cascading failure engine |
+| **Database** | SQLite / SQLAlchemy | Persistent agent memory and telemetry storage |
 
 ---
 
-## 🤖 Multi-Agent System
+## 💻 How to Run Locally
 
-| Agent | Role |
-|-------|------|
-| 🎖️ Mission Commander | Orchestrates all agents, makes final decisions |
-| 🏥 Grid Health | Monitors voltages, loadings, transformer states |
-| 🔮 Failure Prediction | XGBoost-powered failure probability estimation |
-| 🌪️ Weather Risk | Climate impact on infrastructure |
-| ☀️ Renewable Optimizer | Solar/wind/battery balancing |
-| 💰 Economic Intelligence | ₹ crore impact calculations |
-| 🛡️ Cybersecurity | Anomaly detection, threat hunting |
-| ⚡ Grid Optimizer | Load distribution optimization |
-| 🔧 Self-Healing | Autonomous repair actions |
-| 🚨 Emergency Response | Crisis management protocols |
-| 🔬 Energy Scientist | Pattern discovery, hypothesis generation |
+To run the full stack, you need two terminal windows:
 
----
+### Terminal 1: Start the AI Backend
+```powershell
+cd GRIDSENTINEL/backend
+python -m venv venv
+.\venv\Scripts\activate
 
-## 🖥️ Views
-
-1. **⚡ National Command Center** — Real-time grid overview
-2. **🗣️ Agent Debate Chamber** — Watch agents analyze and argue
-3. **🌐 3D Digital Twin** — Three.js national grid visualization
-4. **🦢 Black Swan Simulator** — Extreme event testing
-5. **🔮 Future Grid Designer** — AI infrastructure planning
-6. **🔧 Self-Healing Operations** — Autonomous action audit trail
-7. **💰 Economic Impact Center** — Financial analysis dashboard
-
----
-
-## 🚀 Quick Start
-
-```bash
-# 1. Clone
-git clone <repo-url>
-cd GRIDSENTINEL-X
-
-# 2. Backend
-cd backend
+# Install AI and Physics Simulation dependencies
 pip install -r requirements.txt
-# Set your Gemini API key
-export GEMINI_API_KEY=your_key_here
-uvicorn main:app --reload --port 8000
 
-# 3. Dashboard (new terminal)
-cd dashboard
+# Create a .env file and add your Gemini API Key
+echo "GEMINI_API_KEY=your_key_here" > .env
+
+# Initialize DB and start the server
+python -c "import asyncio; from db.connection import init_db; asyncio.run(init_db())"
+uvicorn main:app --reload --port 8000
+```
+
+### Terminal 2: Start the Dashboard Frontend
+```powershell
+cd GRIDSENTINEL/dashboard
 npm install
 npm run dev
-
-# 4. Open http://localhost:3000
 ```
 
-### Docker
-```bash
-cp .env.example .env
-# Edit .env with your GEMINI_API_KEY
-docker-compose up
-```
+Finally, open your browser and navigate to: **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-## 🦢 Black Swan Scenarios
+## 🦢 Built-In "Black Swan" Scenarios
+
+Trigger these directly from the dashboard to watch the agents spring into action:
 
 | Scenario | Type | Severity |
 |----------|------|----------|
@@ -99,24 +82,10 @@ docker-compose up
 | Nationwide Solar Collapse | Renewable | Critical |
 | Coordinated Cyber Attack — Delhi | Cyber | Emergency |
 | Cascading Transformer Failure | Equipment | Emergency |
-| Severe Monsoon Flooding — Mumbai | Climate | Critical |
-| National Peak Demand Surge | Demand | Warning |
-| Multi-Component Degradation — Bengaluru | Equipment | Warning |
 
-Plus **custom scenario builder** — judges type any disaster in natural language.
-
----
-
-## 🏙️ National Digital Twin
-
-4-city simulated grid: **Mumbai • Delhi • Bengaluru • Chennai**
-
-- 38 buses, 36 transmission lines, 13 substations, 12 generators
-- Inter-city 220kV transmission corridors
-- Real-time pandapower AC power flow simulation
+*Plus a Custom Scenario Builder where judges can type any disaster in natural language.*
 
 ---
 
 ## 📄 License
-
-MIT — Built for hackathon demonstration purposes.
+MIT License. Built for presentation purposes at the FAR AWAY 2026 Finals.

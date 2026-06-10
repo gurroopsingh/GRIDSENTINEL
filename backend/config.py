@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Configuration"""
+"""GRIDSENTINEL — Configuration"""
 
 from pydantic_settings import BaseSettings
 from functools import lru_cache
@@ -6,7 +6,7 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     # App
-    app_name: str = "GRIDSENTINEL-X Ω"
+    app_name: str = "GRIDSENTINEL"
     debug: bool = True
 
     # Database

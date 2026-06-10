@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Grid Health Metrics"""
+"""GRIDSENTINEL — Grid Health Metrics"""
 
 import numpy as np
 

@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Autonomous Learning & Pattern Discovery"""
+"""GRIDSENTINEL — Autonomous Learning & Pattern Discovery"""
 
 from datetime import datetime
 from typing import Optional

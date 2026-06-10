@@ -1,7 +1,7 @@
-# GRIDSENTINEL-X Ω — Pitch Deck Content
+# GRIDSENTINEL — Pitch Deck Content
 
 ## Slide 1: Title
-**GRIDSENTINEL-X Ω**
+**GRIDSENTINEL**
 The World's First Autonomous Multi-Agent Energy Defense and Infrastructure Planning System
 *A deep-tech intelligence platform for national power grids.*
 
@@ -13,7 +13,7 @@ The World's First Autonomous Multi-Agent Energy Defense and Infrastructure Plann
 
 ## Slide 3: The Solution
 **Autonomous Defense**
-GRIDSENTINEL-X Ω is an AI-native digital twin that:
+GRIDSENTINEL is an AI-native digital twin that:
 1. Predicts failures before they occur
 2. Simulates extreme "Black Swan" events
 3. Autonomously self-heals the grid
