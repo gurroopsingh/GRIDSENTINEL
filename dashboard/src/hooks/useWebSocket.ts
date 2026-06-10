@@ -11,7 +11,8 @@ export function useWebSocket() {
   const wsRef = useRef<WebSocket | null>(null);
 
   const connect = useCallback(() => {
-    const ws = new WebSocket(getWSUrl('/ws/grid'));
+    const ws = new WebSocket('wss://gurroopsingh-gridsentinel.hf.space/ws');
+
     wsRef.current = ws;
 
     ws.onopen = () => setConnected(true);
@@ -31,7 +32,7 @@ export function useWebSocket() {
         if (msg.type !== 'pong') {
           setEvents(prev => [...prev.slice(-100), msg]);
         }
-      } catch {}
+      } catch { }
     };
   }, []);
 
