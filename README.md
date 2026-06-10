@@ -13,17 +13,51 @@
 
 Modern power grids are blind and reactive. They wait for catastrophic failures to happen, then respond. **GRIDSENTINEL** is an **AI-native autonomous infrastructure platform** that predicts, simulates, prevents, and self-heals power grid failures before they occur. 
 
-Built for the **FAR AWAY 2026 Finals**, this is not a monitoring dashboard. This is a cognitive defense system equipped with a multi-agent AI brain, real-time digital twin simulation, and autonomous decision-making.
+Built for the **FAR AWAY 2026 Finals**, this is not a monitoring dashboard. This is a cognitive defense system equipped with a multi-agent AI brain, real-time digital twin physics simulation, and autonomous decision-making.
 
 ---
 
-## 🚀 Key Innovations
+## 🚀 Full Feature Breakdown
 
-1. **⚡ National Command Center:** Real-time grid overview with beautiful NASA-style dark mode UI.
-2. **🗣️ Agent Debate Chamber:** Watch 12 specialized LangGraph AI agents (Commander, Economist, Energy Scientist) analyze telemetry and argue over the best mitigation strategies in real-time.
-3. **🌐 3D Digital Twin:** Interactive physics simulation (Pandapower + Three.js) spanning Mumbai, Delhi, Bengaluru, and Chennai.
-4. **🦢 Black Swan Simulator:** Inject extreme disaster events (Category 5 Cyclones, Cyber Attacks, Solar Collapses) and watch the AI autonomously self-heal the grid.
-5. **🔮 Future Grid Designer:** AI infrastructure planning tool that generates multi-crore grid upgrades for 2035.
+### 1. 🗣️ The Multi-Agent Debate Chamber
+At the core of the system is a LangGraph-orchestrated swarm of 12 specialized AI agents powered by Gemini 1.5 Pro. Instead of a single AI making blind guesses, these agents **debate** mitigation strategies in real-time, challenging each other's confidence scores before acting.
+* **🎖️ Mission Commander:** Orchestrates all agents and authorizes final actions.
+* **🏥 Grid Health:** Monitors voltage fluctuations and transformer temperatures.
+* **🔮 Failure Prediction:** XGBoost-powered failure probability estimation.
+* **🌪️ Weather Risk:** Analyzes climate impacts (e.g., cyclones, heat waves).
+* **☀️ Renewable Optimizer:** Balances solar/wind intermittency with grid demand.
+* **💰 Economic Intelligence:** Calculates business impact and ₹ crore losses prevented.
+* **🛡️ Cybersecurity:** Detects anomalies and hunts potential SCADA threats.
+* **⚡ Grid Optimizer:** Optimizes load distribution across substations.
+* **🔧 Self-Healing:** Generates autonomous physical repair actions (e.g., line switching).
+* **🚨 Emergency Response:** Activates crisis management protocols for hospitals.
+* **🔬 Energy Scientist:** Discovers long-term patterns and generates infrastructure hypotheses.
+
+### 2. 🌐 4-City National Digital Twin
+We built a highly realistic simulated national grid mapping **Mumbai, Delhi, Bengaluru, and Chennai**.
+* **Physics Engine:** Runs live AC/DC power flow calculations using Pandapower.
+* **Scale:** Simulates 42 buses, 33 transmission lines, 13 substations, and 12 major generators (Thermal, Nuclear, Solar, Wind).
+* **Visuals:** Rendered in a fully interactive 3D environment using Three.js.
+
+### 3. 🦢 Black Swan Disaster Simulator
+Judges can inject extreme, low-probability disaster events to watch the AI autonomously defend the grid. Built-in scenarios include:
+* Extreme Heat Wave — Mumbai
+* Category 4 Cyclone — Chennai
+* Nationwide Solar Collapse
+* Coordinated Cyber Attack — Delhi
+* Cascading Transformer Failure
+
+### 4. 🔧 Autonomous Self-Healing
+When a failure occurs (N-1 contingency), the system doesn't just alert a human. It autonomously executes operations to prevent a cascading collapse:
+* Generator Redispatching
+* Transmission Line Switching
+* Dynamic Load Shedding (saving critical infrastructure like hospitals first)
+
+### 5. 🔮 Future Grid Designer
+An AI infrastructure planning tool. Prompt the AI with commands like *"Redesign Mumbai's grid for 100% renewables by 2035,"* and it will generate multi-crore infrastructure blueprints, calculating ROI and stability improvements.
+
+### 6. 💰 Economic Impact Center
+Every blackout carries a financial cost. The platform actively calculates the economic damage of a potential failure versus the cost of the AI's preventative measures, demonstrating exactly how many ₹ Crores were saved.
 
 ---
 
@@ -68,22 +102,6 @@ npm run dev
 ```
 
 Finally, open your browser and navigate to: **[http://localhost:3000](http://localhost:3000)**
-
----
-
-## 🦢 Built-In "Black Swan" Scenarios
-
-Trigger these directly from the dashboard to watch the agents spring into action:
-
-| Scenario | Type | Severity |
-|----------|------|----------|
-| Extreme Heat Wave — Mumbai | Climate | Critical |
-| Category 4 Cyclone — Chennai | Climate | Emergency |
-| Nationwide Solar Collapse | Renewable | Critical |
-| Coordinated Cyber Attack — Delhi | Cyber | Emergency |
-| Cascading Transformer Failure | Equipment | Emergency |
-
-*Plus a Custom Scenario Builder where judges can type any disaster in natural language.*
 
 ---
 
