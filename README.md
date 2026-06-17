@@ -7,7 +7,7 @@
 ![Cities](https://img.shields.io/badge/Coverage-4_Cities-8b5cf6?style=flat-square)
 ![AI](https://img.shields.io/badge/AI-Gemini_Powered-ff3366?style=flat-square)
 
-**🌍 Live Demo:** [https://gridsentinel-nine.vercel.app/](https://gridsentinel-nine.vercel.app/)
+**🌍 Project Live:** [https://gridsentinel-nine.vercel.app/](https://gridsentinel-nine.vercel.app/)
 
 ---
 
