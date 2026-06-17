@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Database Models"""
+"""GRIDSENTINEL — Database Models"""
 
 import uuid
 from datetime import datetime

@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — 4-City National Power Grid Model using Pandapower"""
+"""GRIDSENTINEL — 4-City National Power Grid Model using Pandapower"""
 
 import pandapower as pp
 import numpy as np
@@ -235,7 +235,7 @@ def _add_chennai(net):
 
 def create_national_grid():
     """Build the full 4-city national grid with inter-city corridors."""
-    net = pp.create_empty_network(name="GRIDSENTINEL-X National Grid")
+    net = pp.create_empty_network(name="GRIDSENTINEL National Grid")
 
     city_buses = {}
     city_buses["Mumbai"] = _add_mumbai(net)

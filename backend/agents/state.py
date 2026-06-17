@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Agent Shared State"""
+"""GRIDSENTINEL — Agent Shared State"""
 
 from typing import TypedDict, Annotated, Optional
 from datetime import datetime

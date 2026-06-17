@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Pydantic Schemas"""
+"""GRIDSENTINEL — Pydantic Schemas"""
 
 from pydantic import BaseModel
 from typing import Optional

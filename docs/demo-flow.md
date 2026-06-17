@@ -1,10 +1,10 @@
-# GRIDSENTINEL-X Ω — Demo Flow Script
+# GRIDSENTINEL — Demo Flow Script
 
 **Total Demo Time:** 3-4 minutes
 
 ### 1. The Hook (30s)
 *Open on National Command Center*
-"Judges, welcome to GRIDSENTINEL-X Omega. Traditional grids monitor failures. This is a cognitive grid that thinks, predicts, and autonomously defends itself. What you're seeing is a real-time live digital twin of 4 major Indian cities."
+"Judges, welcome to GRIDSENTINEL. Traditional grids monitor failures. This is a cognitive grid that thinks, predicts, and autonomously defends itself. What you're seeing is a real-time live digital twin of 4 major Indian cities."
 
 ### 2. The Black Swan (60s)
 *Switch to Black Swan Simulator*
@@ -27,4 +27,4 @@
 "The AI forecasts demand, calculates the optimal solar/wind/battery mix, prices the infrastructure in Crores, and gives us a complete strategic blueprint."
 
 ### 5. The Close (15s)
-"GRIDSENTINEL-X Omega: The world's first autonomous energy defense platform. Thank you."
+"GRIDSENTINEL: The world's first autonomous energy defense platform. Thank you."

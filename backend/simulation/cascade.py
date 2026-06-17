@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Cascading Failure Simulator"""
+"""GRIDSENTINEL — Cascading Failure Simulator"""
 
 import networkx as nx
 import numpy as np

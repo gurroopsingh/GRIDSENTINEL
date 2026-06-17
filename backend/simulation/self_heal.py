@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Self-Healing Action Executor"""
+"""GRIDSENTINEL — Self-Healing Action Executor"""
 
 import copy
 import numpy as np

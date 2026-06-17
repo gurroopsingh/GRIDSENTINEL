@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Multi-Agent Graph Orchestration"""
+"""GRIDSENTINEL — Multi-Agent Graph Orchestration"""
 
 import json
 import os

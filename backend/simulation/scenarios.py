@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — Pre-built Disaster Scenarios & Black Swan Engine"""
+"""GRIDSENTINEL — Pre-built Disaster Scenarios & Black Swan Engine"""
 
 import copy
 import random

@@ -1,4 +1,4 @@
-"""GRIDSENTINEL-X Ω — FastAPI Application"""
+"""GRIDSENTINEL — FastAPI Application"""
 
 import asyncio
 import json
@@ -31,7 +31,7 @@ simulation_history: list[dict] = []
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global grid_net, city_buses, current_state
-    print("⚡ GRIDSENTINEL-X Ω — Initializing National Grid...")
+    print("⚡ GRIDSENTINEL — Initializing National Grid...")
     grid_net, city_buses = create_national_grid()
     success = run_powerflow(grid_net)
     current_state = get_grid_state(grid_net, city_buses)
@@ -42,7 +42,7 @@ async def lifespan(app: FastAPI):
     task.cancel()
 
 
-app = FastAPI(title="GRIDSENTINEL-X Ω", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="GRIDSENTINEL", version="1.0.0", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"],
                    allow_credentials=True)
 
