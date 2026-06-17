@@ -11,7 +11,7 @@ export function useWebSocket() {
   const wsRef = useRef<WebSocket | null>(null);
 
   const connect = useCallback(() => {
-    const ws = new WebSocket('wss://gurroopsingh-gridsentinel.hf.space/ws');
+    const ws = new WebSocket(getWSUrl('/ws/grid'));
 
     wsRef.current = ws;
 

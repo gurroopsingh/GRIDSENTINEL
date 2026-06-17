@@ -1,5 +1,5 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-const WS_BASE = process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8000';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://gurroopsingh-gridsentinel.hf.space';
+const WS_BASE = process.env.NEXT_PUBLIC_WS_URL || 'wss://gurroopsingh-gridsentinel.hf.space';
 
 export async function fetchAPI(endpoint: string, options?: RequestInit) {
   const res = await fetch(`${API_BASE}${endpoint}`, {
