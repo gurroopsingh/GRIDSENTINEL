@@ -42,7 +42,6 @@ At the core of the system is a LangGraph-orchestrated swarm of 12 specialized AI
 
 ### 2. 🌐 4-City National Digital Twin
 We built a highly realistic simulated national grid mapping **Mumbai, Delhi, Bengaluru, and Chennai**.
-<p align="center"><img src="assets/ui_screenshot_3.png" width="700" alt="Digital Twin" /></p>
 
 * **Physics Engine:** Runs live AC/DC power flow calculations using Pandapower.
 * **Scale:** Simulates 42 buses, 33 transmission lines, 13 substations, and 12 major generators (Thermal, Nuclear, Solar, Wind).
@@ -50,7 +49,7 @@ We built a highly realistic simulated national grid mapping **Mumbai, Delhi, Ben
 
 ### 3. 🦢 Black Swan Disaster Simulator
 Judges can inject extreme, low-probability disaster events to watch the AI autonomously defend the grid. Built-in scenarios include:
-<p align="center"><img src="assets/ui_screenshot_4.png" width="700" alt="Black Swan Simulator" /></p>
+<p align="center"><img src="assets/ui_screenshot_3.png" width="700" alt="Black Swan Simulator" /></p>
 
 * Extreme Heat Wave — Mumbai
 * Category 4 Cyclone — Chennai
@@ -68,6 +67,7 @@ When a failure occurs (N-1 contingency), the system doesn't just alert a human. 
 
 ### 5. 🔮 Future Grid Designer
 An AI infrastructure planning tool. Prompt the AI with commands like *"Redesign Mumbai's grid for 100% renewables by 2035,"* and it will generate multi-crore infrastructure blueprints, calculating ROI and stability improvements.
+<p align="center"><img src="assets/ui_screenshot_4.png" width="700" alt="Future Grid Designer" /></p>
 
 ### 6. 💰 Economic Impact Center
 Every blackout carries a financial cost. The platform actively calculates the economic damage of a potential failure versus the cost of the AI's preventative measures, demonstrating exactly how many ₹ Crores were saved.
